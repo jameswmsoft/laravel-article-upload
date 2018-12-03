@@ -1,0 +1,207 @@
+body { color: #222; padding: 0; overflow-x: hidden; }
+
+html, body { height: 100%; }
+
+.full_width .container { max-width: 1680px; }
+.modal-open .colorpicker.dropdown-menu,.modal-open .datepicker.dropdown-menu {z-index:10000}
+
+/* main content */
+#screen {min-height:100%}
+#screen_content{float: left;width: 100%}
+.main_view{padding:54px 30px 30px;background:#fff;border-left:1px solid transparent;}
+.main_view li{line-height:22px}
+
+.modal-header { background: #e4e4e4; border-color: #d4d4d4; padding: 5px 15px; }
+.modal-header .close { margin-top: 3px; }
+.modal-footer { padding: 7px 15px 8px; }
+.modal-content { border: 6px solid rgba(0, 0, 0, 0.5); -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; box-shadow: none; }
+.modal-body { padding: 20px 15px; }
+.modal-backdrop, .modal-backdrop.fade.in { opacity: .1; background: #777; }
+
+.tab-content > .active {padding:8px}
+
+/* tabs */
+.tabbable-bordered{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.tabbable-bordered > .nav-tabs {margin: 0}
+.tabbable-bordered .tab-content {border-color: #ddd;border-style:solid;border-width:0;overflow:auto;padding:18px 0 0}
+.tabbable-bordered .tab-pane {padding:0}
+.tabbable-bordered > .tab-content{-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px;border-width:0 1px 1px;padding:20px 20px 10px}
+
+.editor .component_sortable.placeholder {
+	position: relative;
+	/** More li styles **/
+}
+.editor .component_sortable.placeholder:before {
+	position: absolute;
+	/** Define arrowhead **/
+}
+
+.editor .row .col-md-12{
+	border: 1px solid;
+	border-bottom: 0px;
+}
+.editor .row .col-md-6{
+	border: 1px solid;
+	border-bottom: 0px;
+	border-right: 0px;
+}
+.editor .row:last-child .col-md-12{
+	border-bottom: 1px solid;
+}
+.editor .row:last-child .col-md-6{
+	border-bottom: 1px solid;
+}
+.editor .row:last-child .col-md-6:last-child{
+	border-bottom: 1px solid;
+	border-right: 1px solid;
+}
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.smsedit_module_controls span{
+	background-color: rgba(235,235,235,0.85);
+	margin:0px 2px;
+	padding: 2px;
+	border-radius: 3px;
+	font-size: 10px;
+}
+.component_sortable {
+	margin: 0px;
+	word-break: break-all;
+}
+.smsedit_module {
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	cursor: pointer;
+}
+.smsedit_module_controls {
+	position: absolute;
+	right: 0px;
+	z-index: 100;
+	display: none;
+}
+.editor .row + .row {
+	margin-top: 0px;
+}
+.preview_mobile {
+	background-image: url(../img/mobile_preview.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center 15px;
+	width: 300px;
+	height: 628px;
+	margin: 0px auto;
+	padding: 15px 0px;
+}
+.mCustomScrollbar {
+	margin: 58px 8px 80px 14px;
+	position: absolute;
+	background-color: #fff;
+	height: 459px;
+	width: 272px;
+}
+
+#smsedit_iframe_preview {
+	margin: 74px 17px 77px;
+	position: absolute;
+	background-color: #fff;
+	height: 478px;
+	width: 268px;
+}
+.controls_container {
+	padding: 15px;
+}
+.controls_container .label {
+	margin: 6px 0px;
+	display: inline-block;
+	padding: 4px 6px;
+}
+
+.controls_container .label-info {
+	margin: 0px 3px;
+}
+
+.controls_container .input-group {
+	margin-bottom: 20px;
+}
+.controls_container .input-group:last-child {
+	margin-bottom: 0px;
+}
+.phone_properties .label {
+	margin: 3px 0px;
+	display: inline-block;
+	padding: 4px 6px;
+}
+.phone_properties .label:not(.label-info){
+	margin: 3px 0px;
+	color: #000;
+}
+
+.phone_properties .row {
+	margin-bottom: 10px;
+}
+
+.phone_properties .row:last-child {
+	margin-bottom: 0px;
+}
+
+#phone_editor #ws_sms_tags{
+	margin-top: 10px;
+}
+
+#phone_editor #ws_sms_tags .label.label-info {
+	margin: 3px 0px;
+	display: inline-block;
+	padding: 4px 6px;
+}
+
+#phone_editor #ws_sms_tags .label.label-default.tag {
+	margin: 3px;
+}
+#media .label {
+	margin: 6px 0px;
+	display: inline-block;
+	padding: 4px 6px;
+}
+#media .label:not(.label-info){
+	color: #000;
+}
+
+.colorpicker-component .input-group-addon {
+	width: 0%;
+}
+
+#media .row {
+	margin-bottom: 11px;
+	padding: 0px 10px;
+}
+
+#media .row:last-child {
+	margin-bottom: 0px;
+}
+#smsedit_settings select {
+	min-width: 60%;
+}
+#media_uplaod_list ul li {
+	min-height: 55px;
+}
+
+#mobile_view .stats_container dd {
+	margin-left: 100px;
+}
+#mobile_view .stats_container dt {
+	width: 100px;
+	text-align: left;
+}
+#mobile_view .status_container dd {
+	margin-left: 60px;
+}
+#mobile_view .status_container dt {
+	width: 60px;
+	text-align: left;
+}
